@@ -1,34 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Create Account | Securo Bank</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Securo Bank | Create Account</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="center">
+<body>
+    <h1 class="top-logo">Securo Bank</h1>
 
-<div class="glass-card">
-  <h2>Create Securo Account</h2>
-<form onsubmit="createAccount(); return false;">
-  <input id="name" placeholder="Full Name">
-  <input id="email" placeholder="Email">
-  <input id="phone" placeholder="Phone">
-  <input id="pass" type="password" placeholder="Password">
-  <input id="deposit" placeholder="Initial Deposit">
+    <!-- Form Section -->
+    <div style="padding: 20px; max-width: 400px; margin: auto;">
+        <h2>Create Your Securo Account</h2>
 
-<button type="button" class="btn glow-btn" onclick="createAccount()">
-  Create Securo Account
-</button>
-</form>
-</div>
-<script src="core.js"></script>
-<script src="auth.js"></script>
-<script src="create-account.js"></script>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" placeholder="Enter your full name">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter password">
+
+        <label for="deposit">Initial Deposit:</label>
+        <input type="number" id="deposit" placeholder="Enter initial deposit">
+
+        <!-- Button using existing .btn class -->
+        <button type="button" class="btn" onclick="createAccount()">Create Securo Account</button>
+
+        <p style="margin-top: 10px;">Already have an account? <a href="login.html">Login here</a></p>
+    </div>
+
+    <!-- JS Scripts -->
+    <script src="core.js"></script>
+    <script src="auth.js"></script>
+    <script>
+        function createAccount() {
+            let name = document.getElementById("name").value.trim();
+            let email = document.getElementById("email").value.trim();
+            let password = document.getElementById("password").value;
+            let deposit = parseFloat(document.getElementById("deposit").value);
+
+            if (!name || !email || !password || isNaN(deposit) || deposit < 0) {
+                alert("Please fill all fields correctly!");
+                return;
+            }
+
+            let user = { name, email, password, balance: deposit, transactions: [] };
+            localStorage.setItem("securoUser", JSON.stringify(user));
+
+            alert("Account created successfully!");
+            window.location.href = "login.html";
+        }
+    </script>
 </body>
 </html>
-
-
-
-
-
-
-
