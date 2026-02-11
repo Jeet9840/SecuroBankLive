@@ -1,21 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
   <title>Securo Bank | Balance</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="app-container">
-  <h1 class="page-title">💰 Balance</h1>
-  <div class="content-box">
-    <p>Your balance will appear here.</p>
-  </div>
+<div class="balance-container">
+  <h2>Your Current Balance:</h2>
+  <p id="balanceAmount">₹ 0.00</p>
 </div>
+
 <script src="core.js"></script>
+<script src="auth.js"></script>
 <script>
-protectPage();
+  // Ensure only logged-in users can access
+  protectPage();
+
+  const user = JSON.parse(localStorage.getItem("securoUser"));
+  const balanceEl = document.getElementById("balanceAmount");
+
+  if(user && balanceEl){
+    balanceEl.innerText = "₹ " + user.balance.toFixed(2);
+  }
 </script>
 
 </body>
