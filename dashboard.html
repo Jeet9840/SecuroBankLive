@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard | Securo Bank</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="layout">
+
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+
+    <div class="side-header">
+      <h2 class="side-logo">Securo</h2>
+      <div class="toggle-btn" onclick="toggleSidebar()">☰</div>
+    </div>
+
+   <div class="nav-item" onclick="goBalance()">💰 Balance</div>
+<div class="nav-item" onclick="goTransfer()">🔁 Transfer</div>
+<div class="nav-item" onclick="goTransactions()">📜 Transactions</div>
+<div class="nav-item" onclick="goLoans()">🧾 Loans</div>
+<div class="nav-item" onclick="goIPO()">📈 IPO</div>
+<div class="nav-item" onclick="goProfile()">👤 Profile</div>
+
+<div class="nav-item logout" onclick="logout()">🚪 Logout</div>
+
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+
+    <h1 class="top-logo">Securo Bank</h1>
+
+    <!-- Welcome / Empty Space Content -->
+    <div class="welcome-box">
+      <h2>Welcome to Securo Bank</h2>
+      <p>
+        A digital vault of trust and motion —  
+        where security flows like light,  
+        and every action leaves a trace of confidence.
+      </p>
+
+      <div class="status-cards">
+        <div class="status-card">🔐 Secure System</div>
+        <div class="status-card">⚡ Fast Transfers</div>
+        <div class="status-card">📈 Smart Investments</div>
+        <div class="status-card">🧠 Intelligent Banking</div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+function goBalance(){
+  alert("Balance page coming soon 🌌");
+}
+
+function goTransfer(){
+  window.location.href = "transfer.html";
+}
+
+function goTransactions(){
+  window.location.href = "transactions.html";
+}
+
+function goLoans(){
+  window.location.href = "loan.html";
+}
+
+function goIPO(){
+  window.location.href = "ipo.html";
+}
+
+function goProfile(){
+  window.location.href = "profile.html";
+}
+
+function logout(){
+  localStorage.removeItem("securoUser");
+  alert("Logged out of Securo Bank 🏦");
+  window.location.href = "login.html";
+}
+
+function toggleSidebar(){
+  document.getElementById("sidebar").classList.toggle("closed");
+}
+
+
+</script>
+
+</body>
+</html>
