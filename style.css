@@ -325,3 +325,55 @@ input{
     0 0 20px rgba(0,255,204,0.6),
     0 0 40px rgba(0,102,255,0.4);
 }
+
+
+
+.ipo-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap:25px;
+  margin-top:30px;
+}
+
+.ipo-card{
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius:18px;
+  padding:25px;
+  backdrop-filter: blur(12px);
+  transition: 0.4s ease;
+  box-shadow: 0 0 20px rgba(0,255,204,0.08);
+}
+
+.ipo-card:hover{
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 0 40px rgba(0,255,204,0.3);
+}
+
+.ipo-card h2{
+  margin-bottom:10px;
+  color:#00ffcc;
+}
+
+.ipo-card p{
+  margin:6px 0;
+  opacity:0.9;
+}
+
+.glow-btn{
+  margin-top:15px;
+  padding:10px 20px;
+  border-radius:25px;
+  border:none;
+  background: linear-gradient(90deg,#00ffcc,#00aaff);
+  color:black;
+  font-weight:600;
+  cursor:pointer;
+  transition:0.4s;
+  box-shadow: 0 0 15px rgba(0,255,204,0.4);
+}
+
+.glow-btn:hover{
+  box-shadow: 0 0 30px rgba(0,255,204,0.8);
+  transform: scale(1.05);
+}
