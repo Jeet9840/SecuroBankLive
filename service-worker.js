@@ -1,16 +1,17 @@
 const CACHE_NAME = "securo-bank-v1";
 
 const urlsToCache = [
-  "./",
-  "./index.html",
-  "./login.html",
-  "./dashboard.html",
-  "./create-account.html",
-  "./profile.html",
-  "./css/style.css",
-  "./js/auth.js",
-  "./js/profile.js"
+  "/SecuroBankLive/",
+  "/SecuroBankLive/index.html",
+  "/SecuroBankLive/login.html",
+  "/SecuroBankLive/dashboard.html",
+  "/SecuroBankLive/create-account.html",
+  "/SecuroBankLive/profile.html",
+  "/SecuroBankLive/css/style.css",
+  "/SecuroBankLive/js/auth.js",
+  "/SecuroBankLive/js/profile.js"
 ];
+
 
 self.addEventListener("install", event => {
   event.waitUntil(
