@@ -451,3 +451,64 @@ input{
 .glass-box a:hover {
     text-decoration: underline;
 }
+
+
+/* Glass box for forms */
+.form-box {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-sizing: border-box;
+}
+
+/* Inputs inside form-box */
+.form-box input {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Buttons inside form-box */
+.form-box .btn {
+    cursor: pointer;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #0ff; /* match your theme */
+    color: #000;
+    transition: all 0.3s ease;
+}
+
+.form-box .btn:hover {
+    box-shadow: 0 0 15px #0ff;
+    transform: scale(1.05);
+}
+
+/* Optional link style */
+.form-box p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.form-box a {
+    color: #0ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.form-box a:hover {
+    text-decoration: underline;
+}
+
