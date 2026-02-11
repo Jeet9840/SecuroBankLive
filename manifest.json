@@ -1,19 +1,19 @@
 {
   "name": "Securo Bank",
   "short_name": "Securo",
-  "start_url": "SecuroBankLive/index.html",
+  "start_url": "/SecuroBankLive/index.html",
   "display": "standalone",
   "background_color": "#020024",
   "theme_color": "#00ffcc",
   "description": "Securo Bank - Digital Vault of Trust",
   "icons": [
     {
-      "src": "SecuroBankLive/assets/icon-192.png",
+      "src": "/SecuroBankLive/assets/icon-192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "SecuroBankLive/assets/icon-512.png",
+      "src": "/SecuroBankLive/assets/icon-512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
