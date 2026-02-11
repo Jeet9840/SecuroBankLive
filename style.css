@@ -377,3 +377,16 @@ input{
   box-shadow: 0 0 30px rgba(0,255,204,0.8);
   transform: scale(1.05);
 }
+
+/* balance */
+.balance-container p#balanceAmount {
+  font-size: 2rem;
+  color: #00ff99;
+  text-shadow: 0 0 10px #00ff99, 0 0 20px #00ff99;
+  transition: all 0.3s ease-in-out;
+}
+
+.balance-container p#balanceAmount:hover {
+  transform: scale(1.05);
+  text-shadow: 0 0 20px #00ff99, 0 0 40px #00ff99;
+}
