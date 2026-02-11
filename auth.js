@@ -44,3 +44,9 @@ function login(){
     alert("Invalid Credentials ❌");
   }
 }
+
+function logoutUser(){
+  localStorage.removeItem("securoSession");
+  localStorage.removeItem("securoUser");
+  window.location.href = "login.html";
+}
