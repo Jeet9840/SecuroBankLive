@@ -25,3 +25,7 @@ function goProfile(){
 function toggleSidebar(){
   document.getElementById("sidebar").classList.toggle("closed");
 }
+
+function doLogout(){
+  logoutUser();
+}
