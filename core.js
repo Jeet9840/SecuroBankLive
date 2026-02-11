@@ -96,8 +96,4 @@ function updateProfilePic(img){
   setUser(user);
 }
 
-/* -------- LOGOUT -------- */
-function logout(){
-  clearUser();
-  window.location.href = "login.html";
-}
+
