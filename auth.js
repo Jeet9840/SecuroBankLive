@@ -1,23 +1,21 @@
 function createAccount(){
-
-  const name = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
-  const phone = document.getElementById("phone").value;
-  const pass = document.getElementById("pass").value;
-  const deposit = document.getElementById("deposit").value;
+let name = document.getElementById("name").value;
+let email = document.getElementById("email").value;
+let password = document.getElementById("password").value;
+let deposit = parseFloat(document.getElementById("deposit").value);
 
   if(!name || !email || !phone || !pass || !deposit){
     alert("Fill all fields");
     return;
   }
 
-  const user = {
-    name: name,
-    email: email,
-    phone: phone,
-    pass: pass,
-    balance: deposit
-  };
+  let user = {
+  name: name,
+  email: email,
+  password: password,
+  balance: deposit,
+  transactions: []
+};
 
   localStorage.setItem("securoUser", JSON.stringify(user));
 
@@ -50,3 +48,4 @@ function logoutUser(){
   localStorage.removeItem("securoUser");
   window.location.href = "login.html";
 }
+
