@@ -15,8 +15,16 @@
       ENTER BANK
     </button>
   </div>
+  <script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("./service-worker.js")
+    .then(() => console.log("Securo Bank PWA awakened 🌌"));
+}
+</script>
+
 
 </body>
 </html>
+
 
 
