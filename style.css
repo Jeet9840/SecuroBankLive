@@ -390,3 +390,64 @@ input{
   transform: scale(1.05);
   text-shadow: 0 0 20px #00ff99, 0 0 40px #00ff99;
 }
+
+
+/* ================= Glass Box Form ================= */
+.glass-box {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 400px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-sizing: border-box;
+}
+
+/* Inputs inside glass box */
+.glass-box input {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Button inside glass box */
+.glass-box .btn {
+    cursor: pointer;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #0ff; /* adjust to your theme */
+    color: #000;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for button */
+.glass-box .btn:hover {
+    box-shadow: 0 0 15px #0ff;
+    transform: scale(1.05);
+}
+
+/* Optional: Link under form */
+.glass-box p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.glass-box a {
+    color: #0ff; /* match your theme */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.glass-box a:hover {
+    text-decoration: underline;
+}
