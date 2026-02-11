@@ -6,44 +6,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1 class="top-logo">Securo Bank</h1>
 
-        <div class="form-container">
-            <h2>Create Your Securo Account</h2>
+    <!-- Top Logo -->
+    <h1 class="top-logo">Securo Bank</h1>
 
-            <!-- Name -->
-            <div class="form-group">
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" placeholder="Enter your full name">
-            </div>
+    <!-- Form Section -->
+    <div class="login-container">
 
-            <!-- Email -->
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" placeholder="Enter your email">
-            </div>
+        <h2>Create Your Securo Account</h2>
 
-            <!-- Password -->
-            <div class="form-group">
-                <label for="password">Password:</label>
-                <input type="password" id="password" placeholder="Enter password">
-            </div>
+        <!-- Name -->
+        <input type="text" id="name" placeholder="Full Name">
 
-            <!-- Initial Deposit -->
-            <div class="form-group">
-                <label for="deposit">Initial Deposit:</label>
-                <input type="number" id="deposit" placeholder="Enter initial deposit">
-            </div>
+        <!-- Email -->
+        <input type="email" id="email" placeholder="Email">
 
-            <!-- Create Account Button -->
-            <button type="button" class="btn glow-btn" onclick="createAccount()">
-                Create Securo Account
-            </button>
+        <!-- Password -->
+        <input type="password" id="password" placeholder="Password">
 
-            <!-- Link to Login -->
-            <p>Already have an account? <a href="login.html">Login here</a></p>
-        </div>
+        <!-- Initial Deposit -->
+        <input type="number" id="deposit" placeholder="Initial Deposit">
+
+        <!-- Create Account Button -->
+        <button type="button" class="btn" onclick="createAccount()">
+            Create Securo Account
+        </button>
+
+        <!-- Link to Login -->
+        <p>Already have an account? <a href="login.html">Login here</a></p>
+
     </div>
 
     <!-- JS Scripts -->
@@ -70,3 +61,4 @@
     </script>
 </body>
 </html>
+
