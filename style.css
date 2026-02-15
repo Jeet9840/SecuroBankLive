@@ -1,7 +1,7 @@
 body{
   margin:0;
   font-family: 'Segoe UI';
-  background: radial-gradient(circle,#020024,#090979,#000);
+  background: radial-gradient(circle at center,#1a1a1a 0%,#121212 40%,#0b0b0b 70%,#000000 100%);
   color:white;
 }
 
@@ -511,4 +511,5 @@ input{
 .form-box a:hover {
     text-decoration: underline;
 }
+
 
