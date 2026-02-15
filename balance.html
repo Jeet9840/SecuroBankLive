@@ -8,7 +8,7 @@
 
 <div class="balance-container">
   <h2>Your Current Balance:</h2>
-  <p id="balanceAmount">₹ 0.00</p>
+  <p id="balanceAmount">₹50,000</p>
 </div>
 
 <script src="core.js"></script>
@@ -18,7 +18,7 @@
   protectPage();
 
   const user = JSON.parse(localStorage.getItem("securoUser"));
-  const balanceEl = document.getElementById("balanceAmount");
+  const balanceEl = document.getElementById("deposit");
 
   if(user && balanceEl){
     balanceEl.innerText = "₹ " + user.balance.toFixed(2);
