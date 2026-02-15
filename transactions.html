@@ -3,16 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <title>Securo Bank | Transactions</title>
+  
   <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 
-<div class="app-container">
-  <h1 class="page-title">📜 Transactions</h1>
-  <div class="content-box">
-    <p>Transaction history will appear here.</p>
-  </div>
+<div class="transactions-container">
+    <h2 class="transactions-title">Transaction History</h2>
+
+    <div class="transactions-card">
+        <table class="transactions-table">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>From</th>
+                    <th>To</th>
+                    <th>Amount</th>
+                    <th>Type</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>14 Feb 2026</td>
+                    <td>Jeet Soni</td>
+                    <td>Mahek Joshi</td>
+                    <td class="debit">₹48,500</td>
+                    <td class="debit">Sent</td>
+                    <td class="status">Completed</td>
+                </tr>
+
+                <tr>
+                    <td>13 Feb 2026</td>
+                    <td>Yashvi Lumbhani</td>
+                    <td>Jeet Soni</td>
+                    <td class="credit">₹72,000</td>
+                    <td class="credit">Received</td>
+                    <td class="status">Completed</td>
+                </tr>
+
+                <tr>
+                    <td>12 Feb 2026</td>
+                    <td>Mahek Joshi</td>
+                    <td>Yashvi Lumbhani</td>
+                    <td class="debit">₹31,250</td>
+                    <td class="debit">Sent</td>
+                    <td class="status">Completed</td>
+                </tr>
+
+                <tr>
+                    <td>10 Feb 2026</td>
+                    <td>Jeet Soni</td>
+                    <td>Yashvi Lumbhani</td>
+                    <td class="debit">₹95,000</td>
+                    <td class="debit">Sent</td>
+                    <td class="status">Completed</td>
+                </tr>
+
+                <tr>
+                    <td>09 Feb 2026</td>
+                    <td>Yashvi Lumbhani</td>
+                    <td>Mahek Joshi</td>
+                    <td class="credit">₹1,20,750</td>
+                    <td class="credit">Received</td>
+                    <td class="status">Completed</td>
+                </tr>
+
+                <tr>
+                    <td>07 Feb 2026</td>
+                    <td>Mahek Joshi</td>
+                    <td>Jeet Soni</td>
+                    <td class="credit">₹64,300</td>
+                    <td class="credit">Received</td>
+                    <td class="status">Completed</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
+
 <script src="core.js"></script>
 <script src="auth.js"></script>
 <script>
