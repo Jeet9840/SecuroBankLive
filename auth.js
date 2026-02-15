@@ -4,7 +4,8 @@ let email = document.getElementById("email").value;
 let password = document.getElementById("password").value;
 let deposit = parseFloat(document.getElementById("deposit").value);
 
-  if(!name || !email || !phone || !pass || !deposit){
+
+  if(!name || !email || !password || !deposit){
     alert("Fill all fields");
     return;
   }
