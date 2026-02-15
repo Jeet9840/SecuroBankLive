@@ -25,13 +25,13 @@ function requireAuth(){
 }
 
 /* -------- ACCOUNT -------- */
-function createAccount(name,email,password){
+function createAccount(name,email,password,initialDeposit){
   const user = {
     name,
     email,
     password,
     accountNo: "SEC" + Math.floor(100000 + Math.random()*900000),
-    balance: 10000,
+    balance: Number(initialDeposit) || 0,
     transactions: [],
     profilePic: "",
     created: new Date().toISOString()
