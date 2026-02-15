@@ -379,17 +379,77 @@ input{
 }
 
 /* balance */
+.balance-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   
+  align-items: center;       
+  text-align: center;
+  height: 100vh;             
+}
+
+.balance-container h2 {
+  font-size: 26px;
+  margin-bottom: 12px;
+}
+
 .balance-container p#balanceAmount {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #00ff99;
   text-shadow: 0 0 10px #00ff99, 0 0 20px #00ff99;
   transition: all 0.3s ease-in-out;
 }
 
-.balance-container p#balanceAmount:hover {
-  transform: scale(1.05);
-  text-shadow: 0 0 20px #00ff99, 0 0 40px #00ff99;
+.transfer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
 }
+
+.transfer-container h2 {
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+
+.transfer-form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  gap: 15px;
+}
+
+.transfer-form input {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+}
+
+.transfer-form button {
+  padding: 12px;
+  background: #00ff99;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.transfer-form button:hover {
+  background: #00ff99;
+  box-shadow: 0 0 10px #00ff99,
+              0 0 20px #00ff99,
+              0 0 40px #00ff99;
+}
+
+
+
+
 
 
 /* ================= Glass Box Form ================= */
@@ -511,5 +571,4 @@ input{
 .form-box a:hover {
     text-decoration: underline;
 }
-
 
