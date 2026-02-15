@@ -1,6 +1,6 @@
 body{
   margin:0;
-  font-family: 'Segoe UI';
+  font-family: 'Inter', sans-serif;
   background: radial-gradient(circle at center,#1a1a1a 0%,#121212 40%,#0b0b0b 70%,#000000 100%);
   color:white;
 }
@@ -572,3 +572,82 @@ input{
     text-decoration: underline;
 }
 
+/* ---------- Transactions Page ---------- */
+/* Center Section */
+.transactions-container {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.transactions-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #e5e7eb;
+  letter-spacing: 0.5px;
+}
+
+/* Card Look */
+.transactions-card {
+  width: 80%;
+  background: rgba(17, 24, 39, 0.85);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+  overflow: hidden;
+}
+
+/* Table */
+.transactions-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Header */
+.transactions-table thead {
+  background: rgba(30, 41, 59, 0.9);
+}
+
+.transactions-table th {
+  padding: 16px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 600;
+  color: #9ca3af;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+/* Rows */
+.transactions-table td {
+  padding: 16px;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  color: #e5e7eb;
+  font-size: 15px;
+}
+
+/* Row Hover */
+.transactions-table tbody tr:hover {
+  background: rgba(59,130,246,0.08);
+  transition: 0.25s ease;
+}
+
+/* Credit / Debit Colors */
+.credit {
+  color: #22c55e;
+  font-weight: 600;
+}
+
+.debit {
+  color: #ef4444;
+  font-weight: 600;
+}
+
+/* Status Pill */
+.status {
+  color: #38bdf8;
+  font-weight: 500;
+}
